@@ -1,0 +1,27 @@
+body { margin: 30px auto; width: 80%; font-family: Palatino, 'Palatino Linotype'}
+
+a { text-decoration: none; color: #3366cc; font-family: Palatino, 'Palatino Linotype'}
+a:hover { text-decoration: underline; font-family: Palatino, 'Palatino Linotype'}
+a2 { text-decoration: none; line-height: 1em; color: #3366cc; text-align:justify; font-family: Palatino, 'Palatino Linotype'}
+
+p, ul { font-size: 1.5em; line-height: 1.2em; color: #333; font-family: Palatino, 'Palatino Linotype'}
+p1 { font-size: 1em; line-height: 1em; color: #333; font-family: Palatino, 'Palatino Linotype'}
+
+#more {display: none;font-family: Palatino, 'Palatino Linotype', serif;}
+#more2 {display: none;font-family: Palatino, 'Palatino Linotype', serif;}
+#more3 {display: none;font-family: Palatino, 'Palatino Linotype', serif;}
+#more4 {display: none;font-family: Palatino, 'Palatino Linotype', serif;}
+
+h1, h2, h3, h4 { font-family: Palatino, 'Palatino Linotype', serif;}
+h1 { font-size: 3em;  }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2.3em; }
+h4 { font-size: 1.9em; }
+
+nav ul, footer ul { font-size: 1em; font-family: Palatino, 'Palatino Linotype', serif; padding: 0px; list-style: none; font-weight: bold; }
+nav ul li, footer ul li { display: inline; margin-right: 20px; }
+
+/*nav ul {position: fixed; width: 100%;}*/
+footer ul {position: static; bottom: 0; width: 100%;}
+
+footer { border-top: 1px solid #d5d5d5; font-size: 1em; }
