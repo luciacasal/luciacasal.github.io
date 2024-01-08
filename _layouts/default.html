@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTG8196XCN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LTG8196XCN');
+    </script>
+  </head>
+
+
+  <body>
+    <nav>
+<ul>
+
+<!--<li> 
+<img src="/images/rochester_symb.png" style="width: 3%; height: 3%; vertical-align: middle"></li>
+  </li> -->
+<li><a href="/">home</a></li>
+<li><a href="/research">research</a></li>
+  <li><a href="/teaching">teaching</a></li>
+<li><a href="/CV/CV_RG.pdf" target="_blank">cv</a></li>
+</ul>
+    </nav>
+<div class="container">
+
+  {{ content }}
+
+</div>
+  
+  <footer>
+   <ul>
+   <li>email: <a href="mailto:rguntin@gmail.com">rguntin@gmail.com</a></li>
+   <!--<li>; <a href="mailto:lguntinw@ur.rochester.edu">lguntinw@ur.rochester.edu</a></li> -->
+   <!--<li><a href="mailto:rg3128@nyu.edu">email</a></li> -->
+   <!--<li><a href="https://www.linkedin.com/in/rafael-guntin-61b55911" target="_blank">linkedin</a></li>-->
+   <!--<li><a href="https://twitter.com/rafaguntin" target="_blank">twitter</a></li>-->
+   </ul>
+  </footer>
+  </body>
+
+</html>
