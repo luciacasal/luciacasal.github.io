@@ -8,7 +8,7 @@ title: Lucia Casal
 		        <!--<img src="pictures/foto_wp.jpeg" class="inline"/ width="441" height="331"> --> 
 			<img src="pictures/foto_wp.jpeg" class="inline"/ width="441" height="331"> 
 	                        <small>
-			        <p> Hi! Welcome to my webpage. I'm a PhD Candiate at <a style="color:#FB6B90" href="https://economics.cornell.edu" target="_blank">Department of Economics at Cornell University. </a>  </p> 
+			        <p> Hi! Welcome to my webpage. I'm a PhD Candiate at the <a style="color:#FB6B90" href="https://economics.cornell.edu" target="_blank">Department of Economics at Cornell University. </a>  </p> 
 	
 			<p> My research areas are Macroeconomics, Macro-Development, Innovation and Growth. </p>
 		        <p> You can find my <a style="font-weight: bold ; color:#FB6B90"
@@ -73,93 +73,29 @@ Importantly, the importance of different equipment types for total investment ch
 <script>
 	
 			
-function myFunction4() {
-  var dots4 = document.getElementById("dots4");
-  var moreText4 = document.getElementById("more4");
-  var btnText4 = document.getElementById("myBtn4");
+function myFunction1() {
+        toggleAbstract('dots1', 'more1', 'myBtn1');
+    }
 
-  if (dots4.style.display === "none") {
-    dots4.style.display = "inline";
-    btnText4.innerHTML = "Abstract +"; 
-    moreText4.style.display = "none";
-  } 
-else {
-    dots4.style.display = "none";
-    btnText4.innerHTML = "Abstract -"; 
-    moreText4.style.display = "inline-block";
-  }
-}	
-		
-		
-function myFunction3() {
-  var dots3 = document.getElementById("dots3");
-  var moreText3 = document.getElementById("more3");
-  var btnText3 = document.getElementById("myBtn3");
+    function myFunction2() {
+        toggleAbstract('dots2', 'more2', 'myBtn2');
+    }
 
-  if (dots3.style.display === "none") {
-    dots3.style.display = "inline";
-    btnText3.innerHTML = "Abstract +"; 
-    moreText3.style.display = "none";
-  } 
-else {
-    dots3.style.display = "none";
-    btnText3.innerHTML = "Abstract -"; 
-    moreText3.style.display = "inline-block";
-  }
-}
-	
-function myFunction55() {
-  var dots5 = document.getElementById("dots5");
-  var moreText5 = document.getElementById("more5");
-  var btnText5 = document.getElementById("myBtn5");
+    function toggleAbstract(dotsId, moreId, btnId) {
+        var dots = document.getElementById(dotsId);
+        var moreText = document.getElementById(moreId);
+        var btnText = document.getElementById(btnId);
 
-  if (dots5.style.display === "none") {
-    dots5.style.display = "inline";
-    btnText5.innerHTML = "Abstract +"; 
-    moreText5.style.display = "none";
-  } 
-else {
-    dots5.style.display = "none";
-    btnText5.innerHTML = "Abstract -"; 
-    moreText5.style.display = "inline-block";
-  }
-}	
-	
-						
-function myFunction2() {
-  var dots2 = document.getElementById("dots2");
-  var moreText2 = document.getElementById("more2");
-  var btnText2 = document.getElementById("myBtn2");
-
-  if (dots2.style.display === "none") {
-    dots2.style.display = "inline";
-    btnText2.innerHTML = "Abstract +"; 
-    moreText2.style.display = "none";
-  }
-else {
-    dots2.style.display = "none";
-    btnText2.innerHTML = "Abstract -"; 
-    moreText2.style.display = "inline-block";
-  }
-}
-	
-	
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Abstract +"; 
-    moreText.style.display = "none";
-  }
-else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Abstract -"; 
-    moreText.style.display = "inline-block";
-  }
-}	
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Abstract +";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Abstract -";
+            moreText.style.display = "inline-block";
+        }
+    }
 	
 
 	
