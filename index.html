@@ -175,36 +175,6 @@ I use these findings to identify the type of innovations and calibrate the model
 <p style="margin-bottom: 20px;"></p> <!-- This adds 20px of space at the bottom -->
 	    
 	    
-<script>
-    function myFunction1() {
-        toggleAbstract('dots1', 'more1', 'myBtn1');
-    }
-
-    function myFunction2() {
-        toggleAbstract('dots2', 'more2', 'myBtn2');
-    }
-
-    function myFunction3() {
-        toggleAbstract('dots3', 'more3', 'myBtn3');
-    }
-
-    function toggleAbstract(dotsId, moreId, btnId) {
-        var dots = document.getElementById(dotsId);
-        var moreText = document.getElementById(moreId);
-        var btnText = document.getElementById(btnId);
-
-        if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Abstract +";
-            moreText.style.display = "none";
-        } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Abstract -";
-            moreText.style.display = "inline-block";
-        }
-    }
-</script>
-
 
 
 		
@@ -237,6 +207,36 @@ I use these findings to identify the type of innovations and calibrate the model
         // Get the element with id="defaultOpen" and click on it to open the default tab
         document.getElementById("defaultOpen").click();
     </script>
+<script>
+    function myFunction1() {
+        toggleAbstract('dots1', 'more1', 'myBtn1');
+    }
+
+    function myFunction2() {
+        toggleAbstract('dots2', 'more2', 'myBtn2');
+    }
+
+    function myFunction3() {
+        toggleAbstract('dots3', 'more3', 'myBtn3');
+    }
+
+    function toggleAbstract(dotsId, moreId, btnId) {
+        var dots = document.getElementById(dotsId);
+        var moreText = document.getElementById(moreId);
+        var btnText = document.getElementById(btnId);
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Abstract +";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Abstract -";
+            moreText.style.display = "inline-block";
+        }
+    }
+</script>
+
 
 </body>
 </html>
