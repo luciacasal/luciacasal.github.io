@@ -210,6 +210,32 @@
             letter-spacing: 0.01em;
         }
 
+        .email-block {
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        .email-block a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.92rem;
+            color: var(--ink-mid) !important;
+            text-decoration: none;
+            border-bottom: none !important;
+            letter-spacing: 0.02em;
+            transition: color 0.2s;
+        }
+
+        .email-block a:hover {
+            color: var(--pink) !important;
+        }
+
+        .email-block svg {
+            color: var(--pink);
+            flex-shrink: 0;
+        }
+
         .interests-strip {
             margin-top: 40px;
             padding: 20px 24px;
@@ -543,18 +569,18 @@
 
     <!-- ── PAINTING BAND ── -->
     <!-- Download these paintings and save in your pictures/ folder:
-         tg1.jpeg → Torres García, 1943
+         tg1.jpeg → Torres García, Constructive Composition, 1943 (WikiArt)
          tg2.jpeg → Torres García, Pintura Constructiva, 1931 (Met Museum)
          tg3.jpeg → Torres García, Untitled Composition, 1929 (NGA)
-         tg4.jpeg → Torres García, 1936 -->
+         tg4.jpeg → Torres García, Constructivo con objectos, 1936 (Met Museum) -->
     <div class="painting-band">
         <div class="painting-band-img">
-            <img src="pictures/tg1.jpg" alt="" onerror="this.closest('.painting-band-img').style.display='none'">
-            <span class="painting-band-caption"> Joaquín Torres García, 1943</span>
+            <img src="pictures/tg1.jpeg" alt="" onerror="this.closest('.painting-band-img').style.display='none'">
+            <span class="painting-band-caption">Constructive Composition, 1943</span>
         </div>
         <div class="painting-band-img">
-           <img src="pictures/tg4.jpeg" alt="" onerror="this.closest('.painting-band-img').style.display='none'" style="object-position: center top;">
-            <span class="painting-band-caption"> Joaquín Torres García, 1936</span>
+            <img src="pictures/tg4.jpeg" alt="" onerror="this.closest('.painting-band-img').style.display='none'" style="object-position: center top;">
+            <span class="painting-band-caption">Constructivo con objectos, 1936</span>
         </div>
     </div>
 
@@ -568,6 +594,8 @@
             <button class="active" onclick="openTab('home', this)">Home</button>
             <button onclick="openTab('research', this)">Research</button>
             <button onclick="openTab('teaching', this)">Teaching</button>
+            <button onclick="openTab('cv', this)">CV</button>
+            <button onclick="openTab('cv', this)">CV</button>
         </nav>
     </header>
 
@@ -579,6 +607,12 @@
             <div class="home-bio">
                 <p>I am a Postdoctoral Scholar at <a href="https://business.columbia.edu/" target="_blank">Columbia Business School</a>. In 2026, I will join <a href="https://crei.cat/" target="_blank">CREi</a> as a tenure-track Junior Researcher (Assistant Professor).</p>
                 <p>I received my PhD in Economics from <a href="https://economics.cornell.edu/" target="_blank">Cornell University</a> in March 2025.</p>
+                <div class="email-block">
+                    <a href="mailto:lc4053@columbia.edu">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        lc4053 [at] columbia.edu
+                    </a>
+                </div>
                 <div class="interests-strip">
                     <p>Research Areas</p>
                     <div class="tags">
@@ -715,6 +749,20 @@
             <ul class="course-list">
                 <li>ECON 3040 — Intermediate Macroeconomics</li>
             </ul>
+        </div>
+    </div>
+
+    <!-- ── CV ── -->
+    <div id="cv" class="tab-panel">
+        <div style="width:100%; height:85vh;">
+            <iframe src="/CV/CV_Casal.pdf" style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+    </div>
+
+    <!-- ── CV ── -->
+    <div id="cv" class="tab-panel">
+        <div style="width:100%; height:85vh;">
+            <iframe src="/CV/CV_Casal.pdf" style="width:100%; height:100%; border:none;"></iframe>
         </div>
     </div>
 
