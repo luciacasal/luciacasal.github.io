@@ -544,6 +544,8 @@
             .home-photo-col { position: static; order: -1; }
             .photo-frame img { max-width: 260px; }
             .site-name { font-size: 2.4rem; }
+            .photo-frame { max-width: 260px; }
+            .photo-frame::before { right: -6px; bottom: -6px; top: 6px; left: 6px; }
         }
     </style>
 </head>
@@ -557,7 +559,7 @@
          tg4.jpeg → Torres García, Constructivo con objectos, 1936 -->
     <div class="painting-band">
         <div class="painting-band-img">
-            <img src="pictures/tg1.jpg" alt="" onerror="this.closest('.painting-band-img').style.display='none'">
+            <img src="pictures/tg1.jpeg" alt="" onerror="this.closest('.painting-band-img').style.display='none'">
             <span class="painting-band-caption">Torres García, 1943</span>
         </div>
         <div class="painting-band-img">
