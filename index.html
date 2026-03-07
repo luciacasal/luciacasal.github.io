@@ -48,7 +48,6 @@
             animation: fadeUp 0.9s ease forwards 0.1s;
         }
 
-
         .header-inner {
             display: flex;
             justify-content: space-between;
@@ -78,7 +77,6 @@
             font-family: 'EB Garamond', serif;
             padding-bottom: 6px;
         }
-
 
         /* ─── NAV ─── */
         nav {
@@ -199,8 +197,6 @@
             display: block;
             filter: sepia(8%) contrast(1.04);
         }
-
-
 
         .artwork-caption {
             font-size: 0.72rem;
@@ -480,18 +476,6 @@
             letter-spacing: 0.06em;
         }
 
-
-        .painting-band-caption {
-            position: absolute;
-            bottom: 8px;
-            right: 16px;
-            font-size: 0.68rem;
-            color: rgba(255,255,255,0.82);
-            letter-spacing: 0.06em;
-            font-style: italic;
-            text-shadow: 0 1px 4px rgba(0,0,0,0.5);
-        }
-
         /* ─── PAINTING BAND ─── */
         .painting-band {
             width: 100vw;
@@ -568,19 +552,17 @@
 <div class="site-wrapper">
 
     <!-- ── PAINTING BAND ── -->
-    <!-- Download these paintings and save in your pictures/ folder:
-         tg1.jpeg → Torres García, Constructive Composition, 1943 (WikiArt)
-         tg2.jpeg → Torres García, Pintura Constructiva, 1931 (Met Museum)
-         tg3.jpeg → Torres García, Untitled Composition, 1929 (NGA)
-         tg4.jpeg → Torres García, Constructivo con objectos, 1936 (Met Museum) -->
+    <!-- Save paintings in your pictures/ folder:
+         tg1.jpeg → Torres García, Constructive Composition, 1943
+         tg4.jpeg → Torres García, Constructivo con objectos, 1936 -->
     <div class="painting-band">
         <div class="painting-band-img">
             <img src="pictures/tg1.jpg" alt="" onerror="this.closest('.painting-band-img').style.display='none'">
-            <span class="painting-band-caption"> Torres García, 1943</span>
+            <span class="painting-band-caption">Torres García, 1943</span>
         </div>
         <div class="painting-band-img">
             <img src="pictures/tg4.jpeg" alt="" onerror="this.closest('.painting-band-img').style.display='none'" style="object-position: center top;">
-            <span class="painting-band-caption"> Torres García, 1936</span>
+            <span class="painting-band-caption">Torres García, 1936</span>
         </div>
     </div>
 
@@ -594,18 +576,16 @@
             <button class="active" onclick="openTab('home', this)">Home</button>
             <button onclick="openTab('research', this)">Research</button>
             <button onclick="openTab('teaching', this)">Teaching</button>
-            <button onclick="openTab('cv', this)">CV</button>
+            <button onclick="window.open('/CV/CV_Casal.pdf', '_blank')">CV</button>
         </nav>
     </header>
-
-
 
     <!-- ── HOME ── -->
     <div id="home" class="tab-panel active">
         <div class="home-grid">
             <div class="home-bio">
                 <p>I am a Postdoctoral Scholar at <a href="https://business.columbia.edu/" target="_blank">Columbia Business School</a>. </p>
-                <p> This fall, I will join <a href="https://crei.cat/" target="_blank">CREi</a> as a Junior Researcher (Assistant Professor).</p>
+                <p>This fall, I will join <a href="https://crei.cat/" target="_blank">CREi</a> as a Junior Researcher (Assistant Professor).</p>
                 <p>I received my PhD in Economics from <a href="https://economics.cornell.edu/" target="_blank">Cornell University</a> in March 2025.</p>
                 <div class="email-block">
                     <a href="mailto:lc4053@columbia.edu">
@@ -627,7 +607,6 @@
                 <div class="photo-frame">
                     <img src="pictures/foto_wp.jpeg" alt="Lucía Casal">
                 </div>
-
             </div>
         </div>
     </div>
@@ -752,16 +731,6 @@
         </div>
     </div>
 
-    <!-- ── CV ── -->
-    <div id="cv" class="tab-panel">
-        <div style="width:100%; height:85vh;">
-            <iframe src="/CV/CV_Casal.pdf" style="width:100%; height:100%; border:none;"></iframe>
-        </div>
-    </div>
-
-    <!-- ── CV ── -->
-    
-
     <footer>
         <p>Lucía Casal &nbsp;·&nbsp; Columbia Business School &nbsp;·&nbsp; lc4053 [at] columbia.edu</p>
     </footer>
@@ -774,7 +743,6 @@
         document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
         document.getElementById(name).classList.add('active');
         btn.classList.add('active');
-        // Trigger paper animations
         setTimeout(animatePapers, 50);
     }
 
@@ -793,7 +761,6 @@
         });
     }
 
-    // Run on load for default tab
     animatePapers();
 </script>
 
