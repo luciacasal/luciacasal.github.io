@@ -40,7 +40,7 @@
 
         /* ─── HEADER ─── */
         header {
-            padding: 32px 0 0;
+            padding: 16px 0 0;
             border-bottom: 1px solid var(--rule);
             margin-bottom: 0;
             opacity: 0;
@@ -82,7 +82,7 @@
         nav {
             display: flex;
             gap: 0;
-            margin-top: 28px;
+            margin-top: 12px;
         }
 
         nav button {
@@ -108,7 +108,7 @@
         }
 
         /* ─── TABS ─── */
-        .tab-panel { display: none; padding: 56px 0 80px; }
+        .tab-panel { display: none; padding: 28px 0 40px; }
         .tab-panel.active {
             display: block;
             animation: fadeUp 0.5s ease forwards;
@@ -134,8 +134,8 @@
         .home-bio p {
             font-size: 1.05rem;
             color: var(--ink-mid);
-            margin-bottom: 16px;
-            line-height: 1.8;
+            margin-bottom: 8px;
+            line-height: 1.7;
         }
 
         .home-bio a {
@@ -207,8 +207,8 @@
         }
 
         .email-block {
-            margin-top: 28px;
-            margin-bottom: 12px;
+            margin-top: 16px;
+            margin-bottom: 8px;
         }
 
         .email-block a {
@@ -227,14 +227,35 @@
             color: var(--pink) !important;
         }
 
+        .email-block {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cv-inline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.92rem;
+            color: var(--ink-mid) !important;
+            text-decoration: none;
+            border-bottom: none !important;
+            letter-spacing: 0.02em;
+            transition: color 0.2s;
+        }
+
+        .cv-inline:hover { color: var(--pink) !important; }
+        .cv-inline svg { color: var(--pink); flex-shrink: 0; }
+
         .email-block svg {
             color: var(--pink);
             flex-shrink: 0;
         }
 
         .interests-strip {
-            margin-top: 40px;
-            padding: 20px 24px;
+            margin-top: 16px;
+            padding: 14px 20px;
             background: var(--cream-dark);
             border-left: 3px solid var(--pink);
         }
@@ -590,7 +611,7 @@
                 <p>This fall, I will join <a href="https://crei.cat/" target="_blank">CREi</a> as a Junior Researcher (Assistant Professor).</p>
                 <p>I received my PhD in Economics from <a href="https://economics.cornell.edu/" target="_blank">Cornell University</a> in 2025.</p>
                 <div class="email-block">
-                    <a href="mailto:lc4053@columbia.edu">
+                    <a href="/cdn-cgi/l/email-protection#abc7c89f9b9e98ebc8c4c7dec6c9c2ca85cecfde">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                         lc4053 [at] columbia.edu
                     </a>
@@ -603,7 +624,6 @@
                         <span class="tag">Innovation &amp; Growth</span>
                     </div>
                 </div>
-                <a class="cv-link" href="/CV/CV_Casal.pdf" target="_blank">Download CV</a>
             </div>
             <div class="home-photo-col">
                 <div class="photo-frame">
@@ -739,7 +759,7 @@
 
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     function openTab(name, btn) {
         document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
         document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
@@ -758,13 +778,4 @@
 
     function animatePapers() {
         const papers = document.querySelectorAll('.paper-entry');
-        papers.forEach((p, i) => {
-            setTimeout(() => p.classList.add('visible'), i * 80);
-        });
-    }
-
-    animatePapers();
-</script>
-
-</body>
-</html>
+        papers.for
